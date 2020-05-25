@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScannerFrameView">
+        <!-- 扫描框宽占比(相对父容器的宽) -->
+        <attr name="frame_widthRatio" format="float|reference" />
+        <!-- 扫描框高占比(相对父容器的高) -->
+        <attr name="frame_heightRatio" format="float|reference" />
+        <!-- 扫描框宽高比 -->
+        <attr name="frame_whRatio" format="float|reference" />
+
+        <!-- 边框是否显示 -->
+        <attr name="frameLine_visible" format="boolean|reference" />
+        <!-- 边框宽度 -->
+        <attr name="frameLine_width" format="dimension|reference" />
+        <!-- 边框颜色 -->
+        <attr name="frameLine_color" format="color|reference" />
+
+        <!-- 边角是否显示 -->
+        <attr name="frameCorner_visible" format="boolean|reference" />
+        <!-- 边角长度 -->
+        <attr name="frameCorner_length" format="dimension|reference" />
+        <!-- 边角长占比（相对自身宽度） -->
+        <attr name="frameCorner_lengthRatio" format="float|reference" />
+        <!-- 边角宽度 -->
+        <attr name="frameCorner_width" format="dimension|reference" />
+        <!-- 边角颜色 -->
+        <attr name="frameCorner_color" format="color|reference" />
+
+        <!-- 扫描线是否显示 -->
+        <attr name="scanLine_visible" format="boolean|reference" />
+        <!-- 扫描线运动方向 -->
+        <attr name="scanLine_direction">
+            <enum name="top" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="left" value="3" />
+            <enum name="right" value="4" />
+        </attr>
+        <!-- 扫描线长度padding -->
+        <attr name="scanLine_lengthPadding" format="dimension|reference" />
+        <!-- 扫描线长占比（相对扫描框宽/高，依方向而定） -->
+        <attr name="scanLine_lengthRatio" format="float|reference" />
+        <!-- 扫描线宽度 -->
+        <attr name="scanLine_width" format="dimension|reference" />
+        <!-- 扫描线颜色 -->
+        <attr name="scanLine_color" format="color|reference" />
+        <!-- 扫描周期（单位毫秒） -->
+        <attr name="scan_cycle" format="integer|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MaskRelativeLayout">
+        <!-- 扫描框外部颜色 -->
+        <attr name="frame_outsideColor" />
+        <!-- 指定扫描框ID -->
+        <attr name="frame_viewid" />
+    </declare-styleable>
+
+    <declare-styleable name="MaskConstraintLayout">
+        <!-- 扫描框外部颜色 -->
+        <attr name="frame_outsideColor" />
+        <!-- 指定扫描框ID -->
+        <attr name="frame_viewid" />
+    </declare-styleable>
+
+    <!-- 扫描框外部颜色 -->
+    <attr name="frame_outsideColor" format="color|reference" />
+    <!-- 指定扫描框ID -->
+    <attr name="frame_viewid" format="reference"/>
+</resources>

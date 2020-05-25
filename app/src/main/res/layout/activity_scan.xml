@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScanActivity">
+    <cn.simonlee.xcodescanner.view.MaskConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:frame_viewid="@id/scannerframe">
+
+        <cn.simonlee.xcodescanner.view.AdjustTextureView
+            android:id="@+id/textureview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <cn.simonlee.xcodescanner.view.ScannerFrameView
+            android:id="@+id/scannerframe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:frame_whRatio="1"
+            app:frame_widthRatio="0.50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.33"
+            app:scan_cycle="1500"/>
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_translucent"
+            android:padding="5dp"
+            android:text="@string/tips_scan"
+            android:textColor="@color/gray_light_lv5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scannerframe" />
+
+        <Button
+            android:id="@+id/btn_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flash_open"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/scannerframe"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </cn.simonlee.xcodescanner.view.MaskConstraintLayout>
+</LinearLayout>

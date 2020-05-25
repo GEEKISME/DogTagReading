@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">验证犬牌</string>
+
+    <string name="flash_open">开启闪光灯</string>
+    <string name="tips_scan">将二维码/条码放入框内，即可自动扫描</string>
+    <string name="connect">连接</string>
+    <string name="connected">已连接</string>
+    <string name="disconnect">断开连接</string>
+    <string name="enter">进入操作</string>
+    <string name="acquiremac">犬牌检测</string>
+    <string name="scancode">扫码</string>
+    <string name="ble">ble</string>
+    <string name="settings">设置</string>
+    <string name="ok">确认</string>
+</resources>
